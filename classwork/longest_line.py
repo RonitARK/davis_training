@@ -12,6 +12,6 @@ longest = ""
 with open('article.txt', 'r') as f:
     for line in f:
         if len(line) > len(longest):
-            [span_29](start_span)longest = line # Update if longer line found
+            longest = line # Update if longer line found
 print(f"Longest Length: {len(longest)}")
 print(f"Content: {longest.strip()}")
