@@ -12,5 +12,5 @@ with open('students.txt', 'r') as infile, open('high_scorers.txt', 'w') as outfi
     for line in infile:
         # Split line into components
         name, marks, city = line.strip().split(',')
-        [span_5](start_span)if float(marks) > 75:  # Check condition
+        if float(marks) > 75:  # Check condition
             outfile.write(line) # Save valid record
