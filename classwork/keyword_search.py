@@ -11,5 +11,5 @@
 keyword = input("Enter the keyword to search: ")
 with open('data.txt', 'r') as f:
     for line in f:
-        [span_25](start_span)if keyword in line: # Check for keyword existence
+        if keyword in line: # Check for keyword existence
             print(line.strip())
